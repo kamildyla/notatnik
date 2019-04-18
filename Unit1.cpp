@@ -14,4 +14,13 @@ __fastcall TForm1::TForm1(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
- 
+
+void __fastcall TForm1::Otwrz2Click(TObject *Sender)
+{
+if (OpenDialog1 -> Execute())
+        {
+              tresc -> Lines -> LoadFromFile(OpenDialog1 -> FileName);
+        }        
+}
+//---------------------------------------------------------------------------
+
